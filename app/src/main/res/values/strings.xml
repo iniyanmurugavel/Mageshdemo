@@ -1,0 +1,227 @@
+<resources>
+    <string name="app_name">Visustore-Production</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <!--<string name="hello_blank_fragment">Hello blank fragment</string>-->
+    <string name="title_activity_dash_board">DashBoard</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="btn_name">NEW ORDER</string>
+    <string name="lbl_error">No data</string>
+    <string name="card">CART</string>
+    <string name="sent_order">SENT ORDER</string>
+    <string name="complet">COMPLETE ORDER</string>
+    <string name="content">s</string>
+
+    <string name="password">Password</string>
+    <!--<string name="email">Email</string>-->
+    <string name="sinup">NO ACCOUNT? SIGN UP</string>
+    <string name="login">LOGIN</string>
+    <string name="forget">FORGET PASSWORD</string>
+    <string name="hint">hint</string>
+    <string name="welcome">WELCOME BACK,</string>
+    <string name="number6">6</string>
+    <string name="number7">7</string>
+    <string name="number8">8</string>
+    <string name="number9">9</string>
+    <string name="number0">0</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="code2">Please type the verification code</string>
+    <string name="sent">sent to +</string>
+    <string name="sent_orders">sent orders</string>
+    <string name="sign_in">Sign in to Continue</string>
+
+
+    <!--- Order Screen -->
+    <string name="customer_data">customer data</string>
+    <string name="order_reference">Order Reference</string>
+    <string name="consumer_card">consumer card</string>
+    <string name="consignee">consignee</string>
+    <string name="employee">EMPLOYEE :</string>
+    <string name="refraction">refraction</string>
+    <string name="type">type lens code or name</string>
+    <string name="single">single</string>
+    <string name="both">both</string>
+    <string name="virtual">virtual</string>
+    <string name="value_sphere">Value from -20 to 23 in 0.25 steps</string>
+    <string name="value_cylind">Value from -10 to 10 in 0.25 steps</string>
+    <string name="value_axis">Value from 0 to 180 in 1 steps</string>
+    <string name="value_addition">Value from 0.5 to 4 in 0.01 steps</string>
+
+    <string name="sphere_notrange">Sphere not in range</string>
+    <string name="cylind_notrange">Cylind not in range</string>
+    <string name="axis_notrange">Axis not in range</string>
+    <string name="addition_notrange">Addition not in range</string>
+
+    <string name="Sphere">Sphere</string>
+    <string name="Cylind">Cylind</string>
+    <string name="Axis">Axis</string>
+    <string name="Addition">Addition</string>
+    <string name="r">R</string>
+    <string name="lens_type_selection">lens type selection</string>
+    <string name="portfolio">portfolio</string>
+    <string name="lens_type">lens type</string>
+    <string name="diameter">diameter</string>
+    <string name="l">L</string>
+    <string name="treatments">treatments</string>
+    <string name="coating">coating</string>
+    <string name="hard">Hard</string>
+    <string name="tint">tint</string>
+    <string name="uv_protect">UV Protect</string>
+    <string name="ordertype">Order Type</string>
+    <string name="glazing">Glazing</string>
+    <string name="advanced_option">Advanced Option</string>
+    <string name="order_review">Order Review</string>
+    <string name="customer_agree">The customer has confirmed to submit his personal data.</string>
+    <string name="frist_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="click_here">click here to proceed</string>
+
+    <!--- Cart Screen -->
+    <string name="lens_type1">LENS TYPE</string>
+    <string name="search">SEARCH</string>
+
+
+    <string name="refraction_name">Refraction</string>
+    <string name="order_number">ORDER REFERENCE:</string>
+    <string name="order">CUSTOMER NAME:</string>
+    <string name="consiqnee">CONSIGNEE:</string>
+    <!--<string name="employee">EMPLOYEE:</string>-->
+    <string name="order_type">ORDER_TYPE:</string>
+    <string name="vision_center">VISION CENTER:</string>
+    <string name="jim">JIM:</string>
+    <string name="uncut">UNCUT:</string>
+
+    <string name="spher">Sphere</string>
+    <string name="cylinder">Cylinder</string>
+    <string name="axis">Axis</string>
+    <string name="addition">Addition</string>
+    <string name="prism">Res.Prism</string>
+    <string name="base">Res.Base</string>
+    <string name="length">Length</string>
+    <string name="height">Height</string>
+    <string name="dbl">DBL</string>
+    <string name="shape_data">Shape data</string>
+    <!--<string name="r">R</string>-->
+    <!--<string name="l">L</string>-->
+    <string name="fragme">FRAME DATA</string>
+
+    <string name="centration">CENTRATION DATA</string>
+    <string name="pd">PD/z</string>
+    <string name="fh">y(FH)</string>
+    <string name="h">H</string>
+    <string name="bdv">BVD</string>
+
+    <string name="decentration">PRE-DECENTRATION</string>
+    <string name="disp">Displacement</string>
+    <string name="dir">Direction</string>
+
+    <string name="option">THINKNESS OPTIONS</string>
+    <string name="edge">Min.edge</string>
+    <string name="center">Min.center</string>
+    <string name="vsm">Optima/VSM</string>
+
+    <string name="thinning">Thinning prism</string>
+    <string name="adju">Adjustment</string>
+
+
+    <string name="basecurve">Base Curve</string>
+    <string name="def">Default</string>
+    <string name="req">Requested base curve</string>
+    <string name="cal">Calculated base curve</string>
+
+    <string name="lenstype">LENS TYPE</string>
+    <string name="dimeter">Diameter</string>
+
+    <!--<string name="coating">Coating</string>-->
+    <!--<string name="hard">Hard</string>-->
+    <string name="place_order">PLACE ORDER</string>
+    <string name="placeAsComplete">STORE AS COMPLETE ORDER</string>
+    <string name="placeAsIncomplete">INCOMPLETE ORDER</string>
+    <string name="edit_order">EDIT THE ORDER</string>
+    <string name="tin">Tint</string>
+    <string name="name">name</string>
+
+
+    <string name="number">your mobile number:</string>
+    <string name="num">+917795038340</string>
+    <string name="email">your email id:</string>
+    <string name="ema">jayaram.bweb861@gmail.com</string>
+
+    <!--<string name="sent">SENT ORDERS</string>-->
+    <string name="result">SEARCH RESULTS</string>
+    <string name="date">Date</string>
+    <string name="refe">Order ref.</string>
+    <string name="orderno">Order no</string>
+    <string name="emplotee">Employee</string>
+    <!--<string name="lens_type">Lens Type</string>-->
+    <string name="treatment">Treatments</string>
+    <string name="ort_type">Ord.type</string>
+    <string name="deliv_date">Deliv.Date</string>
+    <string name="status">Status</string>
+    <string name="help_support">HELP OR SUPPORT</string>
+
+
+    <string name="order_no">ORDER NO</string>
+    <string name="loading">Loading…,&#8230;</string>
+
+    <!--<string name="EmployeeMangament</string>-->
+    <string name="add">add</string>
+
+    <!--<string name="Advance Option</string>-->
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="direction">Direction</string>
+    <string name="displacement">Displacement</string>
+    <string name="pre">Pre-decentration</string>
+    <string name="inset">Inset 0</string>
+    <string name="slab">Slab-off (RnL)</string>
+    <string name="balanced">Balanced</string>
+    <string name="addition_tech">Additional technical data</string>
+    <string name="requested">Requested base Curve</string>
+    <string name="base_curve">Base Curve</string>
+
+    <string name="values_panto">Value from -20 to 30 in 0.1 steps.</string>
+    <string name="values_pdz_yfh">Value from 0 to 50 in 0.1 steps.</string>
+    <string name="values_framelength">Value from 30 to 80 in 0.01 steps.</string>
+    <string name="values_frameheight">Value from 15 to 65 in 0.01 steps.</string>
+    <string name="values_dbl">Value from 0.1 to 40 in 0.1 steps.</string>
+
+    <!--Validation in advance added-->
+    <string name="panto_notinrange">Pantoscopic angle is not in range.</string>
+    <string name="bow_notinrange">Bow angle is not in range.</string>
+    <string name="pdz_notinrange">PD/z is not in range.</string>
+    <string name="yfh_notinrange">y (FH) is not in range.</string>
+    <string name="framelength_notinrange">Frame length is not in range.</string>
+    <string name="frameHeight_notinrange">Frame height is not in range.</string>
+    <string name="dbl_notinrange">DBL is not in range.</string>
+    <string name="bvd_notinrange">bvd is not in range.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_home"></string>
+    <string name="text_cart"></string>
+    <string name="text_profile"></string>
+    <string name="text_settings"></string>
+    <string name="employee_name">employee name</string>
+    <string name="lensOrder">LENS ORDERING</string>
+    <string name="advanceOption">ADVANCED OPTION</string>
+    <string name="six_five">65</string>
+
+    <string name="incomplete_orders">Incomplete orders</string>
+    <string name="type_lens">type lens code or name</string>
+    <string name="first_name">First Name</string>
+
+    <string name="confirm_msg">The customer has confirmed to submit his personal data.</string>
+
+
+    <string name="type_lens_code_or_name">type lens code or name</string>
+    <string name="select_tint">select_tint</string>
+
+
+</resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textOne"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:background="@drawable/btm_line_shape"
+            android:fontFamily="@font/roboto"
+            android:text="@string/date"
+            android:textColor="#000000" />
+        <View
+            android:layout_width="3dp"
+            android:layout_height="0dp"
+            android:background="@color/button_text"/>
+        <TextView
+            android:id="@+id/textTwo"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:background="@drawable/btm_line_shape"
+            android:fontFamily="@font/roboto"
+            android:text="@string/refe"
+            android:textColor="#000000" />
+    <View
+        android:layout_width="3dp"
+        android:layout_height="0dp"
+        android:background="@color/button_text"/>
+
+    <TextView
+        android:id="@+id/textThree"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:background="@drawable/btm_line_shape"
+        android:fontFamily="@font/roboto"
+        android:text="@string/orderno"
+        android:textColor="#000000" />
+        <!--<View-->
+            <!--android:layout_width="3dp"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:background="@color/button_text"/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/textFour"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:background="@drawable/btm_line_shape"-->
+            <!--android:fontFamily="@font/roboto"-->
+            <!--android:text="@string/emplotee"-->
+            <!--android:textColor="#000000" />-->
+        <View
+            android:layout_width="3dp"
+            android:layout_height="0dp"
+            android:background="@color/button_text"/>
+        <TextView
+            android:id="@+id/textFive"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:background="@drawable/btm_line_shape"
+            android:fontFamily="@font/roboto"
+            android:text="@string/lens_type"
+            android:textColor="#000000" />
+
+        <!--<View-->
+            <!--android:layout_width="3dp"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:background="@color/button_text"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/textSix"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:background="@drawable/btm_line_shape"-->
+            <!--android:fontFamily="@font/roboto"-->
+            <!--android:text="@string/treatment"-->
+            <!--android:textColor="#000000" />-->
+
+         <!--<View-->
+            <!--android:layout_width="3dp"-->
+            <!--android:layout_height="0dp"-->
+             <!--android:background="@color/button_text"/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/textSeven"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:background="@drawable/btm_line_shape"-->
+            <!--android:fontFamily="@font/roboto"-->
+            <!--android:text="@string/ort_type"-->
+            <!--android:textColor="#000000" />-->
+    <!--<View-->
+        <!--android:layout_width="3dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:background="@color/button_text"/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/textEight"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:background="@drawable/btm_line_shape"-->
+            <!--android:fontFamily="@font/roboto"-->
+            <!--android:text="@string/deliv_date"-->
+            <!--android:textColor="#000000" />-->
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="0dp"
+            android:background="@color/button_text"/>
+        <TextView
+            android:id="@+id/textNine"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:background="@drawable/btm_line_shape"
+            android:fontFamily="@font/roboto"
+            android:text="@string/status"
+            android:textColor="#000000" />
+
+</LinearLayout>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".View.Fragment.MyAccountFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginStart="20dp"
+
+    android:orientation="vertical">
+<!--<ImageButton-->
+    <!--android:id="@+id/edit"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="end"-->
+    <!--android:layout_marginRight="20dp"-->
+    <!--android:layout_marginEnd="20dp"-->
+    <!--android:src="@drawable/edit_icon"-->
+    <!--android:background="@android:color/transparent"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="100dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/order_reference_button" android:focusableInTouchMode="true"
+            android:paddingStart="30dp"
+            android:paddingEnd="0dp"
+            android:id="@+id/customer_name"
+            android:hint="CUSTOMER NAME"
+            android:focusable="false"
+            android:inputType="text|number"
+            android:textAllCaps="true"
+            android:textColorHint="@android:color/black"
+            android:textSize="15sp"
+            app:fontFamily="@font/roboto" />
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:background="@drawable/order_reference_button"-->
+            <!--android:focusableInTouchMode="true"-->
+            <!--android:paddingStart="30dp"-->
+            <!--android:paddingEnd="0dp"-->
+            <!--android:id="@+id/customer_number"-->
+            <!--android:hint="CUSTOMER NUMBER"-->
+            <!--android:focusable="false"-->
+            <!--android:inputType="text|number"-->
+            <!--android:textAllCaps="true"-->
+
+            <!--android:textColorHint="@android:color/black"-->
+            <!--android:textSize="15sp"-->
+            <!--app:fontFamily="@font/roboto" />-->
+
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:background="@drawable/order_reference_button"-->
+            <!--android:focusableInTouchMode="true"-->
+            <!--android:paddingStart="30dp"-->
+            <!--android:paddingEnd="0dp"-->
+            <!--android:focusable="false"-->
+            <!--android:hint="STREET"-->
+            <!--android:id="@+id/street"-->
+            <!--android:inputType="text|number"-->
+            <!--android:textAllCaps="true"-->
+
+            <!--android:textColorHint="@android:color/black"-->
+            <!--android:textSize="15sp"-->
+            <!--app:fontFamily="@font/roboto" />-->
+
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:background="@drawable/order_reference_button"-->
+            <!--android:focusableInTouchMode="true"-->
+            <!--android:paddingStart="30dp"-->
+            <!--android:paddingEnd="0dp"-->
+            <!--android:hint="ZIP"-->
+            <!--android:id="@+id/edit_zip"-->
+            <!--android:focusable="false"-->
+            <!--android:inputType="text|number"-->
+            <!--android:textAllCaps="true"-->
+
+            <!--android:textColorHint="@android:color/black"-->
+            <!--android:textSize="15sp"-->
+            <!--app:fontFamily="@font/roboto" />-->
+
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:background="@drawable/order_reference_button"-->
+            <!--android:focusableInTouchMode="true"-->
+            <!--android:paddingStart="30dp"-->
+            <!--android:paddingEnd="0dp"-->
+            <!--android:hint="CONTACT"-->
+            <!--android:id="@+id/edit_contact"-->
+            <!--android:focusable="false"-->
+            <!--android:inputType="text|number"-->
+            <!--android:textAllCaps="true"-->
+
+            <!--android:textColorHint="@android:color/black"-->
+            <!--android:textSize="15sp"-->
+            <!--app:fontFamily="@font/roboto" />-->
+
+        <EditText
+            android:id="@+id/edit_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/order_reference_button"
+            android:focusableInTouchMode="true"
+            android:paddingStart="30dp"
+            android:paddingEnd="0dp"
+            android:focusable="false"
+            android:hint="EMAIL"
+            android:inputType="textEmailAddress"
+            android:textAllCaps="true"
+
+            android:textColorHint="@android:color/black"
+            android:textSize="15sp"
+            app:fontFamily="@font/roboto" />
+
+        <EditText
+            android:id="@+id/edit_phone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/order_reference_button"
+            android:focusableInTouchMode="true"
+            android:paddingStart="30dp"
+            android:paddingEnd="0dp"
+            android:hint="PHONE"
+            android:focusable="false"
+            android:inputType="phone"
+            android:textAllCaps="true"
+            android:textColorHint="@android:color/black"
+            android:textSize="15sp"
+            app:fontFamily="@font/roboto" />
+        <!--<EditText-->
+            <!--android:id="@+id/contact"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:background="@drawable/order_reference_button"-->
+            <!--android:focusableInTouchMode="true"-->
+            <!--android:paddingStart="30dp"-->
+            <!--android:paddingEnd="0dp"-->
+            <!--android:hint="Fax"-->
+            <!--android:focusable="false"-->
+            <!--android:inputType="phone"-->
+            <!--android:textAllCaps="true"-->
+            <!--android:textColorHint="@android:color/black"-->
+            <!--android:textSize="15sp"-->
+            <!--app:fontFamily="@font/roboto" />-->
+        <!--<Button-->
+            <!--android:id="@+id/chat"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:background="@drawable/buttonshape"-->
+            <!--android:text="Chat with us"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:paddingStart="30dp"-->
+            <!--android:paddingEnd="0dp"-->
+            <!--android:gravity="start"-->
+            <!--android:textAllCaps="true"-->
+            <!--android:textColor="@color/button_text"-->
+            <!--app:fontFamily="@font/roboto" />-->
+
+
+    </LinearLayout>
+<!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical">-->
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Version"-->
+        <!--android:layout_marginStart="30dp"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:textColor="@android:color/black"-->
+        <!--app:fontFamily="@font/roboto"-->
+        <!--android:textSize="15sp"/>-->
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Product Version"-->
+        <!--android:layout_marginStart="30dp"-->
+        <!--android:textColor="@android:color/black"-->
+        <!--android:textSize="15sp"-->
+        <!--app:fontFamily="@font/roboto" />-->
+<!--</LinearLayout>-->
+</LinearLayout>
+</ScrollView>
+</FrameLayout>

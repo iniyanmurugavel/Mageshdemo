@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.bcs.visualstore">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/launchicon1"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/launchicon1_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:configChanges="orientation|screenSize|keyboardHidden"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".View.Activity.LoginActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".View.Activity.DashBoard"
+            android:label="@string/title_activity_dash_board"
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize|keyboardHidden">
+        </activity>
+
+        <activity android:name=".FireChat.FireChatRegister" />
+        <activity android:name=".FireChat.FireChatUsers" />
+        <activity android:name=".FireChat.FireChatChat"
+            android:label="Chat"/>
+        <activity android:name=".FireChat.FireChatLogin">
+
+        </activity>
+        <activity android:name=".JivoChatSDK.JivoActivity"></activity>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <service android:name=".LogoutServices">
+
+        </service>
+
+
+    </application>
+
+</manifest>

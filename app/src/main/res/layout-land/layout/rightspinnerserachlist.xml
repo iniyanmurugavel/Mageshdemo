@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0161616"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@drawable/order_reference_button">
+
+
+        <EditText
+            android:id="@+id/searchList"
+            android:layout_toRightOf="@+id/backImage"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:hint="Search lens types"
+            android:drawableLeft="@drawable/search"
+            android:paddingLeft="5dp"
+            android:text=""
+            android:background="@drawable/order_reference_button"/>
+
+        <ImageButton
+            android:id="@+id/cancel"
+            android:layout_alignParentRight="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="?selectableItemBackgroundBorderless"
+            android:src="@drawable/closebtn"/>
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/lenTypeList"
+        android:layout_below="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+
+</RelativeLayout>

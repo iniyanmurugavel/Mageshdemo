@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:title="HOME" />
+
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/lens"
+            android:title="LENS ORDERING " />
+    </group>
+    <group>
+        <item android:title="MY ORDER">
+            <menu>
+                <item
+                    android:id="@+id/cart"
+                    android:title="CART" />
+                <item
+                    android:id="@+id/sent"
+                    android:title="SENT ORDER" />
+            </menu>
+        </item>
+
+    </group>
+
+    <group>
+        <item android:title="SETTING">
+            <menu>
+                <item
+                    android:id="@+id/employee"
+                    android:title="EMPLOYEE MANAGEMENT">
+                </item>
+                <item
+                    android:id="@+id/contact"
+                    android:title="CONTACT INFORMATION">
+                </item>
+            </menu>
+        </item>
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/account"
+            android:title="MY ACCOUNT">
+        </item>
+    </group>
+</menu>

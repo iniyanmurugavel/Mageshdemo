@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:focusable="false"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".View.Fragment.ContactInformation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:orientation="vertical">
+        <!--<ImageButton-->
+            <!--android:id="@+id/edit"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="end"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:layout_marginEnd="20dp"-->
+            <!--android:src="@drawable/edit_icon"-->
+            <!--android:background="@android:color/transparent"/>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+
+                android:background="@drawable/order_reference_button"
+                android:focusableInTouchMode="true"
+                android:paddingStart="30dp"
+                android:paddingEnd="0dp"
+                android:hint="Email"
+                android:focusable="false"
+                android:inputType="text|number"
+                android:textAllCaps="true"
+                android:textColorHint="@color/button_text"
+                android:textSize="15sp"
+                app:fontFamily="@font/roboto" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/order_reference_button"
+                android:focusableInTouchMode="true"
+                android:paddingStart="30dp"
+                android:paddingEnd="0dp"
+                android:hint="Phone"
+                android:focusable="false"
+                android:inputType="text|number"
+                android:textAllCaps="true"
+                android:textColorHint="@color/button_text"
+                android:textSize="15sp"
+                app:fontFamily="@font/roboto" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border_for_cart"
+                android:focusableInTouchMode="true"
+                android:paddingStart="30dp"
+                android:paddingEnd="0dp"
+                android:focusable="false"
+                android:hint="Fax"
+                android:inputType="text|number"
+                android:textAllCaps="true"
+                android:textColorHint="@color/button_text"
+                android:textSize="15sp"
+                app:fontFamily="@font/roboto" />
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/chat_withus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/buttonshape"
+                android:focusableInTouchMode="true"
+
+                android:paddingEnd="0dp"
+                android:hint="Chat With Us"
+                android:focusable="false"
+                android:inputType="text|number"
+                android:textAllCaps="true"
+                android:layout_gravity="center"
+                android:textColorHint="@color/button_text"
+                android:textSize="15sp"
+                app:fontFamily="@font/roboto" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

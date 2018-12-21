@@ -1,0 +1,1132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_Container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".View.Fragment.LensOrderingFragment">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/custData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/customer_data"
+                android:gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textSize="20sp"
+                android:background="@drawable/buttonshape"
+                android:fontFamily="@font/roboto_regular"
+                android:drawableEnd="@drawable/drop_down_icon" />
+            <LinearLayout
+                android:id="@+id/customer_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center"-->
+                <!--android:text="@string/customer_data"-->
+                <!--android:textAllCaps="true"-->
+                <!--android:textColor="@color/button_text"-->
+                <!--android:textSize="25sp"-->
+                <!--android:textStyle="normal"-->
+                <!--app:fontFamily="@font/roboto_bold" />-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+                    <EditText
+                        android:id="@+id/edit_orderReference"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="2"
+                        android:layout_marginBottom="10dp"
+                        android:hint="@string/order_reference"
+                        android:gravity="center_vertical"
+                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+                        android:inputType="textCapCharacters"
+                        android:textColorHint="#000"
+                        android:textSize="15sp"
+                        android:background="@drawable/order_reference_button"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        app:fontFamily="@font/roboto" />
+
+                    <Button
+                        android:id="@+id/consumer_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1.2"
+                        android:text="CONSUMER CARD"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/blue_background"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        app:fontFamily="@font/roboto" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/consumer_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/firstName"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/order_reference_button"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:paddingStart="20sp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:paddingEnd="0dp"
+                        android:inputType="text"
+                        android:textAllCaps="true"
+                        android:textColorHint="#000"
+                        android:hint="FISRT NAME"
+                        android:textSize="15sp"
+                        app:fontFamily="@font/roboto" />
+
+
+                    <EditText
+                        android:id="@+id/lastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/order_reference_button"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:inputType="text"
+                        android:textAllCaps="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:textColorHint="#000"
+                        android:textSize="15sp"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="0dp"
+                        android:hint="LAST NAME"
+                        app:fontFamily="@font/roboto" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="20dp">
+                        <CheckBox
+                            android:id="@+id/customer_checkBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="top" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="2dp"
+                            android:text="The customer has confirmed to submit his personal data."/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="20dp">
+                        <Button
+                            android:id="@+id/cancel"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_background"
+                            android:textColor="@color/button_text"
+                            app:fontFamily="@font/roboto"
+                            android:text="Cancel" />
+                        <Button
+                            android:id="@+id/confirm"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginStart="10sp"
+                            android:enabled="false"
+                            android:layout_marginLeft="10sp"
+                            android:background="#459ADB"
+                            android:textColor="@color/white"
+                            app:fontFamily="@font/roboto"
+                            android:text="confirm" >
+                        </Button>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <View
+                        android:id="@+id/line"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="@color/line" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+
+                android:id="@+id/consignee_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/consignee"
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/roboto" />
+
+                <Spinner
+                    android:id="@+id/consignee"
+                    style="@style/spinner_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:popupBackground="@android:color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/employee"
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/roboto" />
+
+                <TextView
+                    android:id="@+id/spinner2"
+                    style="@style/spinner_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="employee name"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    app:fontFamily="@font/roboto" />
+
+                <!--<TextView-->
+                    <!--android:id="@+id/click_here"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="@string/click_here"-->
+                    <!--android:textSize="15sp"-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:textColor="#000000"-->
+                    <!--android:gravity="end"-->
+                    <!--app:fontFamily="@font/roboto" />-->
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/refraction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/refraction"
+                android:gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textSize="20sp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/buttonshape"
+                android:fontFamily="@font/roboto_regular"
+                android:drawableEnd="@drawable/drop_down_icon" />
+
+            <LinearLayout
+                android:id="@+id/refraction_view"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/ref_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/refraction"
+                        android:textAllCaps="true"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        app:fontFamily="@font/roboto" />
+
+                    <EditText
+                        android:id="@+id/refraction_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/editbox"
+                        android:focusable="false"
+                        android:lines="1"
+                        android:text="0.25"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+                <RadioGroup
+                    android:id="@+id/radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/singleRadio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <TextView
+                        android:id="@+id/single_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/single"
+                        android:textAllCaps="true"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        app:fontFamily="@font/roboto" />
+
+                    <RadioButton
+                        android:id="@+id/radio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:checked="true"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <TextView
+                        android:id="@+id/both"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/both"
+                        android:textAllCaps="true"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        app:fontFamily="@font/roboto" />
+
+                    <RadioButton
+                        android:id="@+id/radio3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:checked="false"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <TextView
+                        android:id="@+id/virtual"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/virtual"
+                        android:textAllCaps="true"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        app:fontFamily="@font/roboto" />
+                </RadioGroup>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="15dp">
+
+                    <LinearLayout
+                        android:id="@+id/layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ss">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/r"
+                            android:textColor="#000"
+                            app:fontFamily="@font/roboto" />
+
+                        <CheckBox
+                            android:id="@+id/right_checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:enabled="false"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layout"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/l"
+                            android:textColor="#000"
+                            app:fontFamily="@font/roboto" />
+
+                        <CheckBox
+                            android:id="@+id/left_check_box"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:enabled="false"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ss"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/layout">
+
+                        <TextView
+                            android:id="@+id/sphere"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/Sphere"
+                            android:textColor="#000"
+                            android:textSize="12sp"
+                            app:fontFamily="@font/roboto" />
+
+                        <TextView
+                            android:id="@+id/cylind"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/Cylind"
+                            android:textColor="#000"
+                            android:textSize="12sp"
+                            app:fontFamily="@font/roboto" />
+
+                        <TextView
+                            android:id="@+id/axis"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/Axis"
+                            android:textColor="#000"
+                            android:textSize="12sp"
+                            app:fontFamily="@font/roboto" />
+
+                        <TextView
+                            android:id="@+id/addition"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/Addition"
+                            android:textColor="#000"
+                            android:textSize="12sp"
+                            app:fontFamily="@font/roboto" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/r"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ss"
+                        android:layout_marginTop="5dp"
+                        android:layout_toEndOf="@+id/layout">
+
+                        <EditText
+                            android:id="@+id/edit_sphere_r"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:imeOptions="actionNext"
+                            android:digits="-1234567890."
+                            android:maxLength="@integer/max_length"
+                            android:focusableInTouchMode="true"
+                            android:textColor="#000000"
+                            android:inputType="numberDecimal|numberSigned"
+                            android:background="@drawable/order_reference_button"
+                            android:lines="1"
+                            android:padding="2dp" />
+
+                        <EditText
+                            android:id="@+id/edit_cylind_r"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_weight="1"
+                            android:imeOptions="actionNext"
+                            android:digits="-1234567890."
+                            android:maxLength="@integer/max_length"
+                            android:textColor="#000000"
+                            android:focusableInTouchMode="true"
+                            android:inputType="numberDecimal|numberSigned"
+                            android:background="@drawable/order_reference_button"
+                            android:lines="1"
+                            android:padding="2dp" />
+
+                        <EditText
+                            android:id="@+id/edit_axis_r"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_weight="1"
+                            android:digits="-1234567890."
+                            android:imeOptions="actionNext"
+                            android:textColor="#000000"
+                            android:maxLength="@integer/max_length"
+                            android:focusableInTouchMode="true"
+                            android:inputType="numberDecimal|number"
+
+                            android:background="@drawable/order_reference_button"
+                            android:lines="1"
+                            android:padding="2dp" />
+
+                        <EditText
+                            android:id="@+id/edit_addition_r"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_weight="1"
+                            android:imeOptions="actionDone"
+                            android:maxLength="@integer/max_length"
+                            android:textColor="#000000"
+                            android:digits="1234567890."
+                            android:focusableInTouchMode="true"
+                            android:inputType="numberDecimal|number"                            android:background="@drawable/order_reference_button"
+                            android:lines="1"
+                            android:padding="2dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/last"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/r"
+                        android:layout_marginTop="10dp"
+                        android:layout_toEndOf="@+id/layout2">
+
+                        <EditText
+                            android:id="@+id/edit_sphere_l"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:imeOptions="actionNext"
+                            android:digits="-1234567890."
+                            android:focusableInTouchMode="true"
+                            android:maxLength="@integer/max_length"
+                            android:inputType="numberDecimal|numberSigned"
+                            android:background="@drawable/order_reference_button"
+                            android:lines="1"
+                            android:textColor="#000000"
+                            android:padding="2dp" />
+
+                        <EditText
+                            android:id="@+id/edit_cylind_l"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_weight="1"
+                            android:imeOptions="actionNext"
+                            android:digits="-1234567890."
+                            android:maxLength="@integer/max_length"
+                            android:focusableInTouchMode="true"
+                            android:inputType="numberDecimal|numberSigned"
+
+                            android:background="@drawable/order_reference_button"
+                            android:lines="1"
+                            android:textColor="#000000"
+                            android:padding="2dp" />
+
+                        <EditText
+                            android:id="@+id/edit_axis_l"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_weight="1"
+                            android:imeOptions="actionNext"
+                            android:digits="-1234567890."
+                            android:maxLength="@integer/max_length"
+                            android:focusableInTouchMode="true"
+                            android:inputType="number|numberDecimal"
+                            android:background="@drawable/order_reference_button"
+                            android:lines="1"
+                            android:textColor="#000000"
+                            android:padding="2dp" />
+
+                        <EditText
+                            android:id="@+id/edit_addition_l"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_weight="1"
+                            android:imeOptions="actionDone"
+                            android:digits="1234567890."
+                            android:focusableInTouchMode="true"
+                            android:maxLength="@integer/max_length"
+                            android:inputType="numberDecimal"
+                            android:background="@drawable/order_reference_button"
+                            android:lines="1"
+                            android:textColor="#000000"
+                            android:padding="2dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/last"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"
+                        android:layout_toEndOf="@+id/layout2">
+
+                        <TextView
+                            android:id="@+id/values"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@null"
+                            android:textColor="#459ADB"
+                            app:fontFamily="@font/roboto" />
+                        <!--<TextView-->
+                            <!--android:id="@+id/click_here1"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="@string/click_here"-->
+                            <!--android:textSize="15sp"-->
+                            <!--android:layout_marginTop="20dp"-->
+                            <!--android:textColor="#000000"-->
+                            <!--android:gravity="end"-->
+                            <!--app:fontFamily="@font/roboto" />-->
+                    </LinearLayout>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <View
+                        android:id="@+id/line1"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="@color/line" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/lensTypeSelection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lens_type_selection"
+                android:gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textSize="20sp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/buttonshape"
+                android:fontFamily="@font/roboto_regular"
+                android:drawableEnd="@drawable/drop_down_icon" />
+
+            <LinearLayout
+                android:id="@+id/lens_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"
+                android:layout_marginEnd="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/portfolio"
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/roboto" />
+
+                <Spinner
+                    android:id="@+id/portfolio"
+                    style="@style/spinner_style"
+                    android:popupBackground="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp" />
+                <LinearLayout
+                    android:id="@+id/rtype_lnr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/lens_type"
+                        android:textAllCaps="true"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        app:fontFamily="@font/roboto" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/r"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+                            app:fontFamily="@font/roboto" />
+
+                        <TextView
+                            android:id="@+id/LenType_1"
+                            style="@style/spinner_style"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:text="type lens code or name"
+                            android:textSize="18sp"
+                            android:textColor="#000000"
+                            android:gravity="center"
+                            android:layout_weight="2"
+                            android:popupBackground="@android:color/white"
+                            app:fontFamily="@font/roboto" />
+
+                        <!--   <ImageView
+                               android:layout_width="wrap_content"
+                               android:layout_height="match_parent"
+                               android:background="@drawable/icons_border"
+                               android:padding="5dp"
+                               android:src="@drawable/filter" />-->
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/diameter"
+                        android:textAllCaps="true"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        app:fontFamily="@font/roboto" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/text1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/r"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+                            app:fontFamily="@font/roboto" />
+
+                        <EditText
+                            android:id="@+id/edit_RDiameter"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_weight="2"
+                            android:inputType="number"
+                            android:imeOptions="actionNext"
+                            android:textColor="#000000"
+                            android:background="@drawable/order_reference_button"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ltype_lnr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/lens_type"
+                        android:textAllCaps="true"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        app:fontFamily="@font/roboto" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/text2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/l"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+                            app:fontFamily="@font/roboto" />
+
+                        <TextView
+                            android:id="@+id/LenType_2"
+                            style="@style/spinner_style"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="18sp"
+                            android:textColor="#000000"
+                            android:gravity="center"
+                            android:text="type lens code or name"
+                            android:layout_weight="2"
+                            android:popupBackground="@android:color/white" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/diameter"
+                        android:textAllCaps="true"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        app:fontFamily="@font/roboto" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/text3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/l"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+                            app:fontFamily="@font/roboto" />
+
+                        <EditText
+                            android:id="@+id/edit_Ldiameter"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_weight="2"
+                            android:inputType="number"
+                            android:imeOptions="actionDone"
+                            android:background="@drawable/order_reference_button"
+                            android:paddingStart="10dp"
+                            android:textColor="#000000"
+                            android:paddingEnd="10dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <!--<TextView-->
+                    <!--android:id="@+id/click_here3"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="@string/click_here"-->
+                    <!--android:textSize="15sp"-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:textColor="#000000"-->
+                    <!--android:gravity="end"-->
+                    <!--app:fontFamily="@font/roboto" />-->
+            </LinearLayout>
+            <Button
+                android:id="@+id/treatments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/treatments"
+                android:gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textSize="20sp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/buttonshape"
+                android:fontFamily="@font/roboto_regular"
+                android:drawableEnd="@drawable/drop_down_icon" />
+            <LinearLayout
+                android:id="@+id/treatments_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:visibility="gone"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/coating"
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/roboto" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/coating"
+                        style="@style/spinner_style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:textSize="18sp"
+                        android:textColor="#000000"
+                        android:gravity="center"
+                        android:text="Coating "
+                        android:layout_weight="2"
+                        android:popupBackground="@android:color/white" />
+
+                    <CheckBox
+                        android:id="@+id/cotingCheck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/hard"
+                        android:textColor="#000"
+                        app:fontFamily="@font/roboto" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/tint"
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/roboto" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/tint"
+                        style="@style/spinner_style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="Select Tint "
+                        android:textSize="18sp"
+                        android:fontFamily="@font/roboto"
+                        android:popupBackground="@android:color/white" />
+                    <!--
+                                        <CheckBox
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent" />-->
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/uv_protect"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        app:fontFamily="@font/roboto" />
+
+                    <Switch
+                        android:id="@+id/switch1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:switchMinWidth="56dp"
+                        android:layout_marginTop="10dp"
+                        android:checked="true"
+                        android:padding="5dp"
+                        android:textOff="OFF"
+                        android:textOn="ON"/>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/ordertype"
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/roboto" />
+
+                <Spinner
+                    android:id="@+id/spinner9"
+                    style="@style/spinner_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_glazing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:buttonTint="@color/button_text"
+                    android:text="@string/glazing"
+
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="70dp"
+                    android:weightSum="2">
+
+                    <Button
+                        android:id="@+id/btn_advanceOption"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/buttonshape"
+                        android:text="@string/advanced_option"
+                        android:textAllCaps="false"
+                        android:textColor="@color/button_text"
+                        android:textSize="15sp"
+                        app:fontFamily="@font/roboto" />
+
+                    <Button
+                        android:id="@+id/order"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/buttonshape"
+                        android:text="@string/order_review"
+                        android:textAllCaps="false"
+                        android:textColor="@color/button_text"
+                        android:textSize="15sp"
+                        app:fontFamily="@font/roboto" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

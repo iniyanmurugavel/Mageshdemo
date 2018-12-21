@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_dash_board">
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+                <Button
+                    android:id="@+id/button"
+                    android:text="@string/btn_name"
+                    android:textColor="#626262"
+                    android:textSize="26sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/buttonshape"
+                    android:shadowColor="#A8A8A8"
+                    android:layout_marginTop="30dp"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="0" />
+
+                <RelativeLayout
+                    android:layout_below="@+id/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+
+                    >
+                    <LinearLayout
+                        android:id="@+id/linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/border"
+                        android:padding="15dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/card"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:textColor="@color/button_text"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:divider="@drawable/divider"
+                            android:dividerPadding="10dp"
+                            android:showDividers="middle"
+                            android:baselineAligned="false">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp"
+                                    android:clickable="true"
+                                    android:id="@+id/rel_incompleteOrder"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/bordertwo"
+                                    android:layout_marginEnd="10dp">
+                                    <ImageView
+                                        android:id="@+id/imgCardOne"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/cardone"
+                                        android:contentDescription="@string/content"
+                                        android:scaleType="fitXY"/>
+
+                                    <TextView
+                                        android:layout_width="100dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_below="@+id/imgCardOne"
+                                        android:layout_marginTop="0dp"
+                                        android:fontFamily="@font/roboto"
+                                        android:gravity="end"
+                                        android:lines="2"
+                                        android:text="INCOMPLETE ORDERS"
+                                        android:textColor="#151414" />
+                                </RelativeLayout>
+                                <!--<RelativeLayout-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_alignParentRight="true">-->
+                                <!--<include-->
+                                <!--layout="@layout/bubblebadge">-->
+
+                                <!--</include>-->
+
+                                <!--</RelativeLayout>-->
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentTop="true"
+                                    android:src="@drawable/badge"
+                                    android:layout_alignParentEnd="true"
+                                    android:contentDescription="@string/content"/>
+
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/bordertwo"
+                                    android:padding="5dp"
+                                    android:clickable="true"
+                                    android:id="@+id/rel_completeOrder"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginEnd="10dp">
+                                    <ImageView
+                                        android:id="@+id/imgCardTwo"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/cardtwo"
+                                        android:contentDescription="@string/content"/>
+                                    <TextView
+                                        android:layout_alignParentRight="true"
+                                        android:layout_below="@+id/imgCardTwo"
+                                        android:layout_width="100dp"
+                                        android:layout_height="wrap_content"
+                                        android:text="COMPLETE ORDERS"
+                                        android:textColor="#151414"
+                                        android:fontFamily="@font/roboto"
+                                        android:gravity="end"
+                                        android:layout_alignParentEnd="true" />
+                                </RelativeLayout>
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentTop="true"
+                                    android:contentDescription="@string/content"
+                                    android:src="@drawable/badge"
+                                    android:layout_alignParentEnd="true" />
+
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_below="@+id/linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/border"
+                        android:layout_marginTop="20dp"
+                        android:padding="15dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sent_order"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:textColor="@color/button_text"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:divider="@drawable/divider"
+                            android:dividerPadding="10dp"
+                            android:showDividers="middle"
+                            android:baselineAligned="false">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp"
+                                    android:clickable="true"
+                                    android:id="@+id/rel_sentOrder"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/bordertwo"
+                                    android:layout_marginEnd="10dp">
+                                    <ImageView
+                                        android:id="@+id/imgCardThree"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/cardthree"
+                                        android:contentDescription="@string/content"
+                                        android:scaleType="fitXY"/>
+                                    <TextView
+                                        android:layout_below="@+id/imgCardThree"
+                                        android:layout_width="80dp"
+                                        android:layout_height="wrap_content"
+                                        android:text="TIMELY ORDERS"
+                                        android:gravity="end"
+                                        android:textColor="#151414"
+                                        android:fontFamily="@font/roboto"
+                                        android:layout_alignParentRight="true"
+                                        android:lines="2"
+                                        android:layout_alignParentEnd="true" />
+                                </RelativeLayout>
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentTop="true"
+                                    android:src="@drawable/badge"
+                                    android:layout_alignParentEnd="true"
+                                    android:contentDescription="@string/content" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/bordertwo"
+                                    android:padding="5dp"
+                                    android:clickable="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:visibility="invisible"
+                                    android:layout_marginEnd="10dp">
+                                    <ImageView
+                                        android:id="@+id/imgCardFour"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/cardfour"
+                                        android:contentDescription="@string/content" />
+                                    <TextView
+                                        android:layout_alignParentRight="true"
+                                        android:layout_below="@+id/imgCardFour"
+                                        android:layout_width="80dp"
+                                        android:layout_height="wrap_content"
+                                        android:text="DELAYED ORDERS"
+                                        android:textColor="#151414"
+                                        android:fontFamily="@font/roboto"
+                                        android:lines="2"
+                                        android:gravity="end"
+                                        android:layout_alignParentEnd="true" />
+                                </RelativeLayout>
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:visibility="invisible"
+                                    android:layout_alignParentTop="true"
+                                    android:src="@drawable/badge"
+                                    android:contentDescription="@string/content"
+                                    android:layout_alignParentEnd="true" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

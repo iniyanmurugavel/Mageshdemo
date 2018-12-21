@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    tools:context=".Fragment.ShapeAndBevelFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/border_for_cart"
+                android:cropToPadding="true"
+                android:padding="1dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image_spec" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinner_type"
+                    style="@style/spinner_style_shape"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                </Spinner>
+
+                <!--<Spinner-->
+                <!--android:id="@+id/spinner_shape"-->
+                <!--style="@style/spinner_style_shape"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="15dp"-->
+                <!--android:layout_marginLeft="15dp"-->
+                <!--android:layout_weight="1">-->
+
+                <!--</Spinner>-->
+            </LinearLayout>
+            <!--
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal">
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/buttonshape"
+                                android:text="Drill Holes"
+                                android:textAllCaps="false"
+                                android:textColor="@color/button_text"
+                                android:textSize="12sp"
+                                app:fontFamily="@font/roboto">
+                            </Button>
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/buttonshape"
+                                android:text="Lens Calculation"
+                                android:textAllCaps="false"
+                                android:textColor="@color/button_text"
+                                android:textSize="12sp"
+                                app:fontFamily="@font/roboto">
+                            </Button>
+                        </LinearLayout>
+            -->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/lens_1"
+                    android:checked="false"
+                    android:gravity="fill"
+                    android:theme="@style/RadioButtonStyle" />
+
+                <RadioButton
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/lens_2"
+                    android:checked="false"
+                    android:gravity="fill"
+                    android:theme="@style/RadioButtonStyle" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/imageView3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/lens_3"
+                    android:checked="false"
+                    android:gravity="fill"
+                    android:theme="@style/RadioButtonStyle" />
+
+                <RadioButton
+                    android:id="@+id/imageView4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/lens_4"
+                    android:checked="false"
+                    android:gravity="fill"
+                    android:theme="@style/RadioButtonStyle" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/imageView5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/lens_5"
+                    android:checked="false"
+                    android:gravity="fill"
+                    android:theme="@style/RadioButtonStyle" />
+
+                <RadioButton
+                    android:id="@+id/imageView6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/lens_6"
+                    android:checked="false"
+                    android:gravity="fill"
+                    android:theme="@style/RadioButtonStyle" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/imageView7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/lens_7"
+                    android:checked="false"
+                    android:gravity="fill"
+                    android:theme="@style/RadioButtonStyle" />
+
+                <RadioButton
+                    android:id="@+id/imageView8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/lens_8"
+                    android:checked="false"
+                    android:gravity="fill"
+                    android:theme="@style/RadioButtonStyle" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/imageView9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/lens_9"
+                    android:checked="false"
+                    android:gravity="fill"
+                    android:theme="@style/RadioButtonStyle" />
+
+                <RadioButton
+                    android:id="@+id/imageView10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/lens_10"
+                    android:checked="false"
+                    android:gravity="fill"
+                    android:theme="@style/RadioButtonStyle" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/imageView11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/lens_11"
+                    android:checked="false"
+                    android:gravity="fill"
+                    android:theme="@style/RadioButtonStyle" />
+
+                <RadioButton
+                    android:id="@+id/imageView12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/lens_12"
+                    android:checked="false"
+                    android:gravity="fill"
+                    android:theme="@style/RadioButtonStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/imageView13"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/lens_13"
+                    android:checked="false"
+                    android:gravity="fill"
+                    android:theme="@style/RadioButtonStyle" />
+
+                <RadioButton
+                    android:id="@+id/imageView14"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/lens_14"
+                    android:checked="false"
+                    android:gravity="fill"
+                    android:theme="@style/RadioButtonStyle" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/imageView15"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/lens_15"
+                    android:checked="false"
+                    android:gravity="fill"
+                    android:theme="@style/RadioButtonStyle" />
+
+                <RadioButton
+                    android:id="@+id/imageView16"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/lens_16"
+                    android:checked="false"
+                    android:gravity="fill"
+                    android:theme="@style/RadioButtonStyle" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_orderR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/buttonshape"
+                android:text="ORDER REVIEW"
+                android:textColor="@color/button_text"
+                android:layout_marginBottom="50dp"
+                android:textSize="18sp"
+                app:fontFamily="@font/roboto" />
+        </RadioGroup>
+    </ScrollView>
+
+</FrameLayout>

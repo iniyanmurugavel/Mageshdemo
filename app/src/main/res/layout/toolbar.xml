@@ -1,0 +1,46 @@
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize"
+    android:background="#CCCCCC"
+    android:gravity="center_vertical|start"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    app:titleTextAppearance="@style/Toolbar.TitleText"
+    style="?android:attr/borderlessButtonStyle">
+
+
+    <ImageView
+        android:id="@+id/menuLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp"
+        android:src="@drawable/menulogo"/>
+
+    <TextView
+        android:id="@+id/tooltxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="toolbarTitle"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:fontFamily="@font/roboto_bold"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/myImageontoolbar"
+        android:padding="5dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/person"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/blackgrey"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
+</android.support.v7.widget.Toolbar>

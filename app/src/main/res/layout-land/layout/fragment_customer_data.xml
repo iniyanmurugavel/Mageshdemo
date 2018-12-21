@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="#99000000"
+    tools:context=".View.Fragment.CustomerDataFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+         android:layout_gravity="center"
+        android:id="@+id/popup"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/consumer_card"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textAllCaps="true"
+        app:fontFamily="@font/roboto"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@android:color/black"
+        app:fontFamily="@font/roboto"
+        android:text="@string/frist_name" />
+    <EditText
+        android:id="@+id/edit_FirstName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/order_reference_button"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:inputType="text"
+        android:textAllCaps="true"
+        android:textColorHint="#000"
+        android:textSize="18sp"
+        app:fontFamily="@font/roboto" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:focusable="false"
+        android:textColor="@android:color/black"
+        app:fontFamily="@font/roboto"
+        android:text="@string/last_name" />
+
+    <EditText
+        android:id="@+id/edit_LastName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/order_reference_button"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:inputType="text"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textAllCaps="true"
+        android:textColorHint="#000"
+        android:textSize="18sp"
+        app:fontFamily="@font/roboto" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:text="@string/customer_agree"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp">
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/buttonshape"
+            android:textColor="@color/button_text"
+            app:fontFamily="@font/roboto"
+            android:text="@string/cancel" />
+        <Button
+            android:id="@+id/confirm"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginStart="10sp"
+            android:background="#459ADB"
+            android:textColor="@color/white"
+            app:fontFamily="@font/roboto"
+            android:text="@string/confirm" />
+    </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

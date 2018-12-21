@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_dash_board">
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        >
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginRight="15dp"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_marginBottom="60dp">-->
+
+
+            <!--<Button-->
+                <!--android:id="@+id/button"-->
+                <!--android:text="@string/btn_name"-->
+                <!--android:textColor="#626262"-->
+                <!--android:textSize="20sp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:background="@drawable/buttonshape"-->
+                <!--android:shadowColor="#A8A8A8"-->
+                <!--android:fontFamily="@font/arial_regular"-->
+                <!--android:layout_marginTop="30dp"-->
+                <!--android:layout_marginBottom="50dp"-->
+                <!--android:shadowDx="0"-->
+                <!--android:shadowDy="0"-->
+                <!--android:shadowRadius="0" />-->
+
+            <!--<Button-->
+                <!--android:layout_below="@+id/button"-->
+                <!--android:id="@+id/incompletebtn"-->
+                <!--android:text="Incomplete orders"-->
+                <!--android:textColor="#626262"-->
+                <!--android:textSize="20sp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:background="@drawable/buttonshape"-->
+                <!--android:shadowColor="#A8A8A8"-->
+                <!--android:fontFamily="@font/arial_regular"-->
+                <!--android:layout_marginTop="30dp"-->
+                <!--android:shadowDx="0"-->
+                <!--android:shadowDy="0"-->
+                <!--android:shadowRadius="0" />-->
+
+            <!--<Button-->
+                <!--android:layout_below="@+id/incompletebtn"-->
+                <!--android:id="@+id/completebtn"-->
+                <!--android:text="complete orders"-->
+                <!--android:textColor="#626262"-->
+                <!--android:textSize="20sp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:background="@drawable/buttonshape"-->
+                <!--android:shadowColor="#A8A8A8"-->
+                <!--android:fontFamily="@font/arial_regular"-->
+                <!--android:layout_marginTop="30dp"-->
+                <!--android:shadowDx="0"-->
+                <!--android:shadowDy="0"-->
+                <!--android:shadowRadius="0" />-->
+
+
+            <!--<Button-->
+                <!--android:layout_below="@+id/completebtn"-->
+                <!--android:id="@+id/sentbtn"-->
+                <!--android:text="sent orders"-->
+                <!--android:textColor="#626262"-->
+                <!--android:textSize="20sp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:background="@drawable/buttonshape"-->
+                <!--android:shadowColor="#A8A8A8"-->
+                <!--android:fontFamily="@font/arial_regular"-->
+                <!--android:layout_marginTop="30dp"-->
+                <!--android:shadowDx="0"-->
+                <!--android:shadowDy="0"-->
+                <!--android:shadowRadius="0" />-->
+
+
+
+
+            <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_below="@+id/button"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginTop="10dp"&ndash;&gt;-->
+
+            <!--&lt;!&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/linear"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:orientation="vertical"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="@drawable/border"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:padding="15dp">&ndash;&gt;-->
+            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="@string/card"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textSize="20sp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textStyle="bold"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:fontFamily="@font/arial_regular"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="@color/button_text"&ndash;&gt;-->
+            <!--&lt;!&ndash;/>&ndash;&gt;-->
+            <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:orientation="horizontal"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginTop="10dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:divider="@drawable/divider"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:dividerPadding="10dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:showDividers="middle"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:baselineAligned="false">&ndash;&gt;-->
+            <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_weight="1">&ndash;&gt;-->
+            <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:padding="5dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:clickable="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/rel_incompleteOrder"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginTop="10dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginRight="10dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="@drawable/bordertwo"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginEnd="10dp">&ndash;&gt;-->
+            <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/imgCardOne"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:src="@drawable/cardone"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:contentDescription="@string/content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:scaleType="fitXY"/>&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="100dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignParentEnd="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_below="@+id/imgCardOne"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginTop="0dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:fontFamily="@font/roboto"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:gravity="end"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:lines="2"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="INCOMPLETE ORDERS"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="#151414" />&ndash;&gt;-->
+            <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;<RelativeLayout&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;android:layout_alignParentRight="true">&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;<include&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;layout="@layout/bubblebadge">&ndash;&gt;&ndash;&gt;-->
+
+            <!--&lt;!&ndash;&lt;!&ndash;</include>&ndash;&gt;&ndash;&gt;-->
+
+            <!--&lt;!&ndash;&lt;!&ndash;</RelativeLayout>&ndash;&gt;&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignParentTop="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:src="@drawable/badge"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignParentEnd="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:contentDescription="@string/content"/>&ndash;&gt;-->
+
+            <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+            <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_weight="1">&ndash;&gt;-->
+            <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="@drawable/bordertwo"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:padding="5dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:clickable="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/rel_completeOrder"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginTop="10dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginRight="10dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginEnd="10dp">&ndash;&gt;-->
+            <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/imgCardTwo"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:src="@drawable/cardtwo"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:contentDescription="@string/content"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_below="@+id/imgCardTwo"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="100dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="COMPLETE ORDERS"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="#151414"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:fontFamily="@font/roboto"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:gravity="end"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignParentEnd="true" />&ndash;&gt;-->
+            <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+            <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignParentTop="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:contentDescription="@string/content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:src="@drawable/badge"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignParentEnd="true" />&ndash;&gt;-->
+
+            <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+            <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+            <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+            <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_below="@+id/linear"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:orientation="vertical"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="@drawable/border"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginTop="20dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:padding="15dp">&ndash;&gt;-->
+            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="@string/sent_order"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textSize="20sp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textStyle="bold"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:fontFamily="@font/arial_regular"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="@color/button_text"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginTop="10dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:orientation="horizontal"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:divider="@drawable/divider"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:dividerPadding="10dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:showDividers="middle"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:baselineAligned="false">&ndash;&gt;-->
+            <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_weight="1">&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:padding="5dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:clickable="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/rel_sentOrder"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginTop="10dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginRight="10dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="@drawable/bordertwo"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginEnd="10dp">&ndash;&gt;-->
+            <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/imgCardThree"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:src="@drawable/cardthree"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:contentDescription="@string/content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:scaleType="fitXY"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_below="@+id/imgCardThree"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="80dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="SENT ORDERS"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:gravity="end"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="#151414"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:fontFamily="@font/roboto"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:lines="2"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignParentEnd="true" />&ndash;&gt;-->
+            <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+            <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignParentTop="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:src="@drawable/badge"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignParentEnd="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:contentDescription="@string/content" />&ndash;&gt;-->
+
+            <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_weight="1">&ndash;&gt;-->
+            <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="@drawable/bordertwo"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:padding="5dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:clickable="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginTop="10dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginRight="10dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:visibility="invisible"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginEnd="10dp">&ndash;&gt;-->
+            <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/imgCardFour"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:src="@drawable/cardfour"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:contentDescription="@string/content" />&ndash;&gt;-->
+            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_below="@+id/imgCardFour"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="80dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="DELAYED ORDERS"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="#151414"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:fontFamily="@font/roboto"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:lines="2"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:gravity="end"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignParentEnd="true" />&ndash;&gt;-->
+            <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+            <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:visibility="invisible"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignParentTop="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:src="@drawable/badge"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:contentDescription="@string/content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignParentEnd="true" />&ndash;&gt;-->
+            <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+            <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+            <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+            <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+
+        <!--</RelativeLayout>-->
+
+
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginLeft="15dp"-->
+                <!--android:layout_marginRight="15dp"-->
+                <!--android:gravity="center">-->
+
+
+                <!--<Button-->
+                    <!--android:id="@+id/button"-->
+                    <!--android:text="@string/btn_name"-->
+                    <!--android:textColor="#626262"-->
+                    <!--android:textSize="20sp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:background="@drawable/buttonshape"-->
+                    <!--android:shadowColor="#A8A8A8"-->
+                    <!--android:fontFamily="@font/arial_regular"-->
+                    <!--android:layout_marginTop="30dp"-->
+                    <!--android:shadowDx="0"-->
+                    <!--android:shadowDy="0"-->
+                    <!--android:shadowRadius="0" />-->
+
+                <!--<Button-->
+                    <!--android:layout_below="@+id/button"-->
+                    <!--android:id="@+id/incompletebtn"-->
+                    <!--android:text="Incomplete orders"-->
+                    <!--android:textColor="#626262"-->
+                    <!--android:textSize="20sp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:background="@drawable/buttonshape"-->
+                    <!--android:shadowColor="#A8A8A8"-->
+                    <!--android:fontFamily="@font/arial_regular"-->
+                    <!--android:layout_marginTop="30dp"-->
+                    <!--android:shadowDx="0"-->
+                    <!--android:shadowDy="0"-->
+                    <!--android:shadowRadius="0" />-->
+
+                <!--<Button-->
+                    <!--android:layout_below="@+id/incompletebtn"-->
+                    <!--android:id="@+id/completebtn"-->
+                    <!--android:text="complete orders"-->
+                    <!--android:textColor="#626262"-->
+                    <!--android:textSize="20sp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:background="@drawable/buttonshape"-->
+                    <!--android:shadowColor="#A8A8A8"-->
+                    <!--android:fontFamily="@font/arial_regular"-->
+                    <!--android:layout_marginTop="30dp"-->
+                    <!--android:shadowDx="0"-->
+                    <!--android:shadowDy="0"-->
+                    <!--android:shadowRadius="0" />-->
+
+
+                <!--<Button-->
+                    <!--android:layout_below="@+id/completebtn"-->
+                    <!--android:id="@+id/sentbtn"-->
+                    <!--android:text="sent orders"-->
+                    <!--android:textColor="#626262"-->
+                    <!--android:textSize="20sp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:background="@drawable/buttonshape"-->
+                    <!--android:shadowColor="#A8A8A8"-->
+                    <!--android:fontFamily="@font/arial_regular"-->
+                    <!--android:layout_marginTop="30dp"-->
+                    <!--android:shadowDx="0"-->
+                    <!--android:shadowDy="0"-->
+                    <!--android:shadowRadius="0" />-->
+
+
+
+
+                <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_below="@+id/button"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_marginTop="10dp"&ndash;&gt;-->
+
+                    <!--&lt;!&ndash;&gt;&ndash;&gt;-->
+                    <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:id="@+id/linear"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:orientation="vertical"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:background="@drawable/border"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:padding="15dp">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:text="@string/card"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:textSize="20sp"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:textStyle="bold"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:fontFamily="@font/arial_regular"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:textColor="@color/button_text"&ndash;&gt;-->
+                            <!--&lt;!&ndash;/>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:orientation="horizontal"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:layout_marginTop="10dp"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:divider="@drawable/divider"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:dividerPadding="10dp"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:showDividers="middle"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:baselineAligned="false">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_weight="1">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:padding="5dp"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:clickable="true"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:id="@+id/rel_incompleteOrder"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_marginTop="10dp"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_marginRight="10dp"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:background="@drawable/bordertwo"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_marginEnd="10dp">&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:id="@+id/imgCardOne"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:src="@drawable/cardone"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:contentDescription="@string/content"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:scaleType="fitXY"/>&ndash;&gt;-->
+
+                                    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:layout_width="100dp"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:layout_alignParentEnd="true"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:layout_below="@+id/imgCardOne"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:layout_marginTop="0dp"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:fontFamily="@font/roboto"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:gravity="end"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:lines="2"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:text="INCOMPLETE ORDERS"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:textColor="#151414" />&ndash;&gt;-->
+                                <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+                                <!--&lt;!&ndash;&lt;!&ndash;<RelativeLayout&ndash;&gt;&ndash;&gt;-->
+                                <!--&lt;!&ndash;&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;&ndash;&gt;-->
+                                <!--&lt;!&ndash;&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;&ndash;&gt;-->
+                                <!--&lt;!&ndash;&lt;!&ndash;android:layout_alignParentRight="true">&ndash;&gt;&ndash;&gt;-->
+                                <!--&lt;!&ndash;&lt;!&ndash;<include&ndash;&gt;&ndash;&gt;-->
+                                <!--&lt;!&ndash;&lt;!&ndash;layout="@layout/bubblebadge">&ndash;&gt;&ndash;&gt;-->
+
+                                <!--&lt;!&ndash;&lt;!&ndash;</include>&ndash;&gt;&ndash;&gt;-->
+
+                                <!--&lt;!&ndash;&lt;!&ndash;</RelativeLayout>&ndash;&gt;&ndash;&gt;-->
+
+                                <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_alignParentTop="true"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:src="@drawable/badge"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_alignParentEnd="true"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:contentDescription="@string/content"/>&ndash;&gt;-->
+
+                            <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_weight="1">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:background="@drawable/bordertwo"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:padding="5dp"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:clickable="true"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:id="@+id/rel_completeOrder"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_marginTop="10dp"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_marginRight="10dp"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_marginEnd="10dp">&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:id="@+id/imgCardTwo"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:src="@drawable/cardtwo"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:contentDescription="@string/content"/>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:layout_below="@+id/imgCardTwo"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:layout_width="100dp"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:text="COMPLETE ORDERS"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:textColor="#151414"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:fontFamily="@font/roboto"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:gravity="end"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:layout_alignParentEnd="true" />&ndash;&gt;-->
+                                <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_alignParentTop="true"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:contentDescription="@string/content"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:src="@drawable/badge"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_alignParentEnd="true" />&ndash;&gt;-->
+
+                            <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_below="@+id/linear"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:orientation="vertical"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:background="@drawable/border"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_marginTop="20dp"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:padding="15dp">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:text="@string/sent_order"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:textSize="20sp"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:textStyle="bold"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:fontFamily="@font/arial_regular"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:textColor="@color/button_text"/>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:layout_marginTop="10dp"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:orientation="horizontal"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:divider="@drawable/divider"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:dividerPadding="10dp"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:showDividers="middle"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:baselineAligned="false">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_weight="1">&ndash;&gt;-->
+
+                                <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:padding="5dp"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:clickable="true"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:id="@+id/rel_sentOrder"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_marginTop="10dp"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_marginRight="10dp"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:background="@drawable/bordertwo"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_marginEnd="10dp">&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:id="@+id/imgCardThree"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:src="@drawable/cardthree"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:contentDescription="@string/content"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:scaleType="fitXY"/>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:layout_below="@+id/imgCardThree"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:layout_width="80dp"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:text="SENT ORDERS"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:gravity="end"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:textColor="#151414"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:fontFamily="@font/roboto"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:lines="2"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:layout_alignParentEnd="true" />&ndash;&gt;-->
+                                <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_alignParentTop="true"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:src="@drawable/badge"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_alignParentEnd="true"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:contentDescription="@string/content" />&ndash;&gt;-->
+
+                            <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+
+                            <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_weight="1">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:background="@drawable/bordertwo"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:padding="5dp"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:clickable="true"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_marginTop="10dp"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_marginRight="10dp"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:visibility="invisible"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_marginEnd="10dp">&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:id="@+id/imgCardFour"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:src="@drawable/cardfour"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:contentDescription="@string/content" />&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:layout_below="@+id/imgCardFour"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:layout_width="80dp"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:text="DELAYED ORDERS"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:textColor="#151414"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:fontFamily="@font/roboto"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:lines="2"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:gravity="end"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;android:layout_alignParentEnd="true" />&ndash;&gt;-->
+                                <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:visibility="invisible"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_alignParentTop="true"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:src="@drawable/badge"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:contentDescription="@string/content"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_alignParentEnd="true" />&ndash;&gt;-->
+                            <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+                <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+
+            <!--</RelativeLayout>-->
+
+
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

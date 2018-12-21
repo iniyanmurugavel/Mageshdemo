@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="false"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".View.Fragment.CartFragment">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="40dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/cart_results"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="cart results"
+                android:textAllCaps="true"
+                android:textColor="#000"
+                android:textSize="18sp"
+                app:fontFamily="@font/roboto_bold" />
+
+            <ImageView
+                android:id="@+id/edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/edit_icon" />
+
+
+
+            <ImageView
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/bin_icon" />
+            <!--<ImageView-->
+            <!--android:id="@+id/delete"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:src="@drawable/bin_icon" />-->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/searchview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/editsearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:lines="1"
+                android:singleLine="true"
+                android:maxLength="15"
+                android:textCursorDrawable="@drawable/my_custom_cursor_drawable"
+                android:hint="Search Order Reference Id"
+                android:imeOptions="actionDone"
+                android:backgroundTint="@color/white"/>
+
+            <ImageView
+                android:id="@+id/searchfilter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/search_1" />
+
+        </RelativeLayout>
+
+
+        <HorizontalScrollView
+            android:id="@+id/res"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:scrollbars="none">
+            <LinearLayout
+                android:id="@+id/aas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <RelativeLayout
+                    android:id="@+id/ss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/darkgrey"
+                        android:padding="5dp"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/headings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="30dp">
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="80dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_marginLeft="10dp"-->
+                        <!--android:layout_marginStart="10dp"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:text=""&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:textAllCaps="false"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:textColor="#000"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:textSize="14sp"&ndash;&gt;-->
+                            <!--&lt;!&ndash;app:fontFamily="@font/roboto" />&ndash;&gt;-->
+
+                        <!--&lt;!&ndash;<View&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:layout_height="2dp"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:background="@color/button_text" />&ndash;&gt;-->
+
+                    <!--</LinearLayout>-->
+                    <LinearLayout
+                        android:id="@+id/date"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:text="Date"
+                            android:textAllCaps="false"
+                            android:textColor="#000"
+                            android:textSize="14sp"
+                            app:fontFamily="@font/roboto" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/button_text" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="140dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Order Id"
+                            android:textAllCaps="false"
+                            android:textColor="#000"
+                            android:textSize="14sp"
+                            app:fontFamily="@font/roboto" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/button_text"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Status"
+                            android:textAllCaps="false"
+                            android:textColor="#000"
+                            android:textSize="14sp"
+                            app:fontFamily="@font/roboto" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/button_text"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="Consumer Name"
+                            android:textAllCaps="false"
+                            android:textColor="#000"
+                            android:textSize="14sp"
+                            app:fontFamily="@font/roboto" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/button_text"/>
+
+                    </LinearLayout>
+
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_marginStart="10dp"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:orientation="vertical">-->
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Ord. type"-->
+                    <!--android:textAllCaps="false"-->
+                    <!--android:textColor="#000"-->
+                    <!--android:textSize="14sp"-->
+                    <!--app:fontFamily="@font/roboto" />-->
+
+
+                    <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="2dp"-->
+                    <!--android:background="@color/button_text"/>-->
+
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_marginStart="10dp"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:orientation="vertical">-->
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Status"-->
+                    <!--android:textAllCaps="false"-->
+                    <!--android:textColor="#000"-->
+                    <!--android:textSize="14sp"-->
+                    <!--app:fontFamily="@font/roboto" />-->
+
+
+                    <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="2dp"-->
+                    <!--android:background="@color/button_text"/>-->
+
+                    <!--</LinearLayout>-->
+
+
+
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_marginStart="10dp"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:orientation="vertical">-->
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content">-->
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+
+                    <!--android:text="Pos"-->
+                    <!--android:textAllCaps="false"-->
+                    <!--android:textColor="#000"-->
+                    <!--android:textSize="14sp"-->
+                    <!--app:fontFamily="@font/roboto" />-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginStart="10dp"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:text="Sph"-->
+                    <!--android:textAllCaps="false"-->
+                    <!--android:textColor="#000"-->
+                    <!--android:textSize="14sp"-->
+                    <!--app:fontFamily="@font/roboto" />-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginStart="10dp"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:text="Cyl"-->
+                    <!--android:textAllCaps="false"-->
+                    <!--android:textColor="#000"-->
+                    <!--android:textSize="14sp"-->
+                    <!--app:fontFamily="@font/roboto" />-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginStart="10dp"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:text="Axis"-->
+                    <!--android:textAllCaps="false"-->
+                    <!--android:textColor="#000"-->
+                    <!--android:textSize="14sp"-->
+                    <!--app:fontFamily="@font/roboto" />-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginStart="10dp"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:text="Add"-->
+                    <!--android:textAllCaps="false"-->
+                    <!--android:textColor="#000"-->
+                    <!--android:textSize="14sp"-->
+                    <!--app:fontFamily="@font/roboto" />-->
+
+                    <!--</LinearLayout>-->
+                    <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="2dp"-->
+                    <!--android:background="@color/button_text"/>-->
+
+                    <!--</LinearLayout>-->
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="There is no content avaliable"
+                    android:visibility="gone"
+                    android:id="@+id/txt_content1"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_content"
+                    android:layout_marginStart="40dp"
+                    android:text="Thers is no Content Avaiable to Display"
+                    android:visibility="gone"/>
+
+                <ListView
+                    android:id="@+id/list_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@null">
+
+                </ListView>
+            </LinearLayout>
+        </HorizontalScrollView>
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+        <!--<Button-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:text="order selected"-->
+        <!--android:textAllCaps="true"-->
+        <!--app:fontFamily="@font/roboto"-->
+        <!--android:background="@drawable/buttonshape"-->
+        <!--android:textColor="@color/button_text"-->
+        <!--android:textSize="18sp"/>-->
+        <!--<Button-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="delete selected"-->
+        <!--android:layout_weight="1"-->
+        <!--android:textAllCaps="true"-->
+        <!--android:layout_marginStart="10dp"-->
+        <!--app:fontFamily="@font/roboto"-->
+        <!--android:background="@drawable/buttonshape"-->
+        <!--android:textColor="@color/button_text"-->
+        <!--android:textSize="18sp"/>-->
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:orientation="horizontal">-->
+        <!--<Button-->
+        <!--android:id="@+id/new_order"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="new order"-->
+        <!--android:textAllCaps="true"-->
+        <!--app:fontFamily="@font/arial_regular"-->
+        <!--android:layout_marginBottom="30dp"-->
+        <!--android:background="@drawable/buttonshape"-->
+        <!--android:textColor="@color/button_text"-->
+        <!--android:textSize="18sp"/>-->
+        <!--</LinearLayout>-->
+    </LinearLayout>
+
+</FrameLayout>
