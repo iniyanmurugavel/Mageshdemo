@@ -1,15 +1,12 @@
 package com.example.bcs.visualstore;
 
-import android.annotation.SuppressLint;
 import android.app.Service;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.CountDownTimer;
 import android.os.IBinder;
-import android.support.annotation.Nullable;
-import android.util.Log;
+import androidx.annotation.Nullable;
 
-import com.example.bcs.visualstore.View.Activity.DashBoard;
 import com.example.bcs.visualstore.View.Activity.LoginActivity;
 
 

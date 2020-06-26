@@ -1,19 +1,17 @@
 package com.example.bcs.visualstore.Controll;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.example.bcs.visualstore.PojoDatas.CallBackData;
 
 import com.example.bcs.visualstore.Utils.APIService;
 import com.example.bcs.visualstore.Utils.ApiUtils;
 import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

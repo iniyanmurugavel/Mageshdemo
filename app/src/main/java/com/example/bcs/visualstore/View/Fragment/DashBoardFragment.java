@@ -6,9 +6,11 @@ import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
 
-import android.support.annotation.NonNull;
-import android.support.annotation.RequiresApi;
-import android.support.v4.app.Fragment;
+import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -50,7 +52,7 @@ public class DashBoardFragment extends Fragment {
        // container.removeAllViews();
         view= inflater.inflate(R.layout.fragment_dash_board, container, false);
 
-        android.support.v7.widget.Toolbar toolbar=(android.support.v7.widget.Toolbar)getActivity().findViewById(R.id.toolbar);
+        androidx.appcompat.widget.Toolbar toolbar=(androidx.appcompat.widget.Toolbar)getActivity().findViewById(R.id.toolbar);
         TextView tooltxt=(TextView)toolbar.findViewById(R.id.tooltxt);
         tooltxt.setText("VISUSTORE");
         backBtn=(ImageView) toolbar.findViewById(R.id.menuLogo);
@@ -139,7 +141,7 @@ public class DashBoardFragment extends Fragment {
     }
 
     public void fragmentMethod(Fragment fragment){
-        android.support.v4.app.FragmentTransaction transaction = getFragmentManager().beginTransaction();
+        FragmentTransaction transaction = getFragmentManager().beginTransaction();
         transaction.replace(R.id.fragmentContainer, fragment); // fragment container id in first parameter is the  container(Main layout id) of Activity
         transaction.addToBackStack(null);
         // this will manage backstack

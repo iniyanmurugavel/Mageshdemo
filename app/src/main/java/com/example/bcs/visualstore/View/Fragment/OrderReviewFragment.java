@@ -7,15 +7,13 @@ import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.widget.Toolbar;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.appcompat.widget.Toolbar;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -30,8 +28,6 @@ import com.example.bcs.visualstore.PojoDatas.GetOrder;
 import com.example.bcs.visualstore.PojoDatas.LensInput;
 import com.example.bcs.visualstore.PojoDatas.ShapeAndBevelData;
 import com.example.bcs.visualstore.R;
-import com.example.bcs.visualstore.View.Activity.DashBoard;
-import com.example.bcs.visualstore.View.Activity.LoginActivity;
 
 
 import org.json.JSONException;
@@ -39,7 +35,6 @@ import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
@@ -47,12 +42,6 @@ import java.net.URL;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
-import okhttp3.MediaType;
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.RequestBody;
-import okhttp3.Response;
 
 
 public class OrderReviewFragment extends Fragment {

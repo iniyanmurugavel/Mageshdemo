@@ -13,48 +13,39 @@ import android.net.NetworkInfo;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
-import android.provider.Settings;
-import android.support.annotation.NonNull;
-import android.support.annotation.RequiresApi;
-import android.support.design.widget.BottomNavigationView;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v4.content.ContextCompat;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import androidx.core.content.ContextCompat;
 import android.util.Log;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
-import android.view.Gravity;
-import android.view.LayoutInflater;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
+
 import android.view.View;
-import android.support.design.widget.NavigationView;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import com.google.android.material.navigation.NavigationView;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.inputmethod.InputMethodManager;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ExpandableListView;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.ListView;
-import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.bcs.visualstore.BottomNavigationViewHelper;
-import com.example.bcs.visualstore.FireChat.FireChatChat;
 import com.example.bcs.visualstore.JivoChatSDK.JivoActivity;
-import com.example.bcs.visualstore.PojoDatas.EmployeeData;
 import com.example.bcs.visualstore.PojoDatas.Sharedpreference;
 import com.example.bcs.visualstore.View.Adapter.CustomExpandableListAdapter;
 import com.example.bcs.visualstore.Utils.APIService;
 import com.example.bcs.visualstore.Utils.ApiUtils;
-import com.example.bcs.visualstore.View.Fragment.AdvanceOptionFragment;
-import com.example.bcs.visualstore.View.Fragment.CartFragment;
 import com.example.bcs.visualstore.View.Fragment.CartResultsFragment;
 import com.example.bcs.visualstore.View.Fragment.ContactInformation;
 
@@ -67,13 +58,10 @@ import com.example.bcs.visualstore.PojoDatas.LogoutData;
 
 import com.example.bcs.visualstore.R;
 import com.example.bcs.visualstore.View.Fragment.SearchOrdersFragment;
-import com.example.bcs.visualstore.View.Fragment.SentOrdersFragment;
 import com.example.bcs.visualstore.View.Fragment.ShapeAndBevelFragment;
 import com.google.gson.JsonElement;
 import org.json.JSONObject;
 
-import java.sql.Time;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
@@ -207,7 +195,7 @@ public class DashBoard extends AppCompatActivity
             public void onClick(View v) {
 
                 FrameLayout fl = (FrameLayout) findViewById(R.id.fragmentContainer);
-                android.support.v4.app.FragmentManager manager=getSupportFragmentManager();
+                androidx.fragment.app.FragmentManager manager=getSupportFragmentManager();
                 if (drawer.isDrawerVisible(GravityCompat.START)) {
                     drawer.closeDrawer(GravityCompat.START);
                     getFragmentManager().popBackStackImmediate();
@@ -404,7 +392,7 @@ public class DashBoard extends AppCompatActivity
     @Override
     public void onBackPressed() {
         FrameLayout fl = (FrameLayout) findViewById(R.id.fragmentContainer);
-        android.support.v4.app.FragmentManager manager=getSupportFragmentManager();
+        androidx.fragment.app.FragmentManager manager=getSupportFragmentManager();
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
@@ -842,7 +830,7 @@ public class DashBoard extends AppCompatActivity
 
 
         /*replace with addd ith transaction.*/
-        android.support.v4.app.FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.fragmentContainer, fragment); // fragment container id in first parameter is the  container(Main layout id) of Activity
         transaction.addToBackStack(null);
         // this will manage backstack
