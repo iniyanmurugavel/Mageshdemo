@@ -14,6 +14,7 @@
         android:roundIcon="@mipmap/launchicon1_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
+        android:allowClearUserData="true"
         android:configChanges="orientation|screenSize|keyboardHidden"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
