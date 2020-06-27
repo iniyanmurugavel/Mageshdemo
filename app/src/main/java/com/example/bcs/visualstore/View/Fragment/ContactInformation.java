@@ -1,24 +1,24 @@
 package com.example.bcs.visualstore.View.Fragment;
 
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.bcs.visualstore.FireChat.FireChatChat;
+import androidx.annotation.NonNull;
+import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.Fragment;
+
 import com.example.bcs.visualstore.JivoChatSDK.JivoActivity;
 import com.example.bcs.visualstore.R;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-
 
 public class ContactInformation extends Fragment {
 

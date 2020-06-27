@@ -4,10 +4,10 @@ package com.example.bcs.visualstore.View.Fragment;
 import android.app.ProgressDialog;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v4.app.DialogFragment;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.Toolbar;
+import androidx.annotation.NonNull;
+import androidx.fragment.app.DialogFragment;
+import androidx.fragment.app.Fragment;
+import androidx.appcompat.widget.Toolbar;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -227,7 +227,7 @@ public class EmployeeManagementFragment extends DialogFragment {
 
 
                         empName=id1.getText().toString().trim();
-                        System.out.println("");
+                        System.out.println();
                         if (!empName.isEmpty()){
                             addEmp.setBackground(getResources().getDrawable(R.drawable.buttonshape));
                             addEmp.setTextColor(getResources().getColor(R.color.button_text));

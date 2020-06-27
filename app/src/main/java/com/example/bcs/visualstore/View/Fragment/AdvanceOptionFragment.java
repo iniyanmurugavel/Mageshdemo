@@ -2,16 +2,13 @@ package com.example.bcs.visualstore.View.Fragment;
 
 
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.widget.Toolbar;
-import android.text.Editable;
-import android.text.InputFilter;
-import android.text.TextWatcher;
-import android.util.Log;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.appcompat.widget.Toolbar;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,16 +22,11 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import com.example.bcs.visualstore.InputFilterMinMax;
 import com.example.bcs.visualstore.PojoDatas.AdvanceInput;
 import com.example.bcs.visualstore.PojoDatas.GetOrder;
 import com.example.bcs.visualstore.PojoDatas.LensInput;
-import com.example.bcs.visualstore.PojoDatas.ShapeAndBevelData;
 import com.example.bcs.visualstore.R;
-import com.example.bcs.visualstore.RangesDisplay;
 import com.example.bcs.visualstore.RangesDisplay1;
-import com.example.bcs.visualstore.RangesDisplayAdvance;
-import com.example.bcs.visualstore.Validation;
 import com.example.bcs.visualstore.Validation1;
 
 import java.util.ArrayList;
@@ -141,7 +133,7 @@ public class AdvanceOptionFragment extends Fragment {
         String serializedDataFromLensOne=preferencesReaderOne.getString(PREFS_KEY,null);
         lensInput=LensInput.create(serializedDataFromLensOne);
 
-        System.out.println("indiv"+lensInput.getIndividual());
+        System.out.println("indiv"+ LensInput.getIndividual());
 
 
 
@@ -522,7 +514,7 @@ public class AdvanceOptionFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                android.support.v4.app.FragmentManager manager=getFragmentManager();
+                FragmentManager manager=getFragmentManager();
 
                 pAng=pAngle.getText().toString().trim();
                 bAng=bAngle.getText().toString().trim();
@@ -614,7 +606,7 @@ public class AdvanceOptionFragment extends Fragment {
         btn_cancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                android.support.v4.app.FragmentManager manager=getFragmentManager();
+                FragmentManager manager=getFragmentManager();
                 manager.popBackStack();
                 tooltxt.setText(R.string.lensOrder);
 

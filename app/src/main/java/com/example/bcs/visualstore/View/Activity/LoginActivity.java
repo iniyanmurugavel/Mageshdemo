@@ -3,23 +3,20 @@ package com.example.bcs.visualstore.View.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.graphics.drawable.Drawable;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.NonNull;
+import androidx.core.content.ContextCompat;
+import androidx.appcompat.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.example.bcs.visualstore.Utils.APIService;
@@ -56,7 +53,7 @@ public class LoginActivity extends AppCompatActivity {
             getWindow().setNavigationBarColor(ContextCompat.getColor(this, R.color.darkgrey)); // Navigation bar the soft bottom of some phones like nexus and some Samsung note series
             getWindow().setStatusBarColor(ContextCompat.getColor(this,R.color.darkgrey)); //status bar or the time bar at the top
         }
-        SharedPreferences pref=getApplicationContext().getSharedPreferences("MyPref", 0); ;
+        SharedPreferences pref=getApplicationContext().getSharedPreferences("MyPref", 0);
         String emailPhone= pref.getString("Login",null);
 
         if (!TextUtils.isEmpty(emailPhone)){

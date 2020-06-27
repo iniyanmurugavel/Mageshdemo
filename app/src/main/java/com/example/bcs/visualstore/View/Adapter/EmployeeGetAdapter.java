@@ -6,7 +6,6 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.Color;
-import android.support.v4.app.Fragment;
 import android.text.Editable;
 import android.text.Selection;
 import android.util.Log;

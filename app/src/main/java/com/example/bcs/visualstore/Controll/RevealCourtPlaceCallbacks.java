@@ -1,6 +1,6 @@
 package com.example.bcs.visualstore.Controll;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 public interface RevealCourtPlaceCallbacks {
 

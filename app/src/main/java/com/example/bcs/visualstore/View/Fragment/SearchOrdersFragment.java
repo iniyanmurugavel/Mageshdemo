@@ -1,18 +1,15 @@
 package com.example.bcs.visualstore.View.Fragment;
 
 
-import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.SharedPreferences;
-import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.widget.Toolbar;
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.widget.Toolbar;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,20 +18,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
 
-import com.example.bcs.visualstore.PojoDatas.DeleteOrder;
 import com.example.bcs.visualstore.PojoDatas.RowItem;
-import com.example.bcs.visualstore.PojoDatas.Sharedpreference;
 import com.example.bcs.visualstore.R;
-import com.example.bcs.visualstore.Utils.ApiUtils;
-import com.example.bcs.visualstore.View.Adapter.CustomAdapter;
 import com.example.bcs.visualstore.View.Adapter.ListAdapter;
-import com.example.bcs.visualstore.View.Fragment.LensOrderingFragment;
-import com.google.gson.JsonElement;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -46,19 +36,11 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.sql.Timestamp;
 import java.text.DateFormat;
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
-import java.util.Locale;
 import java.util.concurrent.ExecutionException;
-
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
 
 
 /**

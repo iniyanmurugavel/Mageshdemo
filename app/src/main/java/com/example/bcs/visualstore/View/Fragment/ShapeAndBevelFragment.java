@@ -4,31 +4,23 @@ package com.example.bcs.visualstore.View.Fragment;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.Toolbar;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.appcompat.widget.Toolbar;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RadioButton;
-import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.example.bcs.visualstore.PojoDatas.AdvanceInput;
 import com.example.bcs.visualstore.PojoDatas.GetOrder;
-import com.example.bcs.visualstore.PojoDatas.LensInput;
 import com.example.bcs.visualstore.R;
 import com.example.bcs.visualstore.PojoDatas.ShapeAndBevelData;
-
-import java.util.ArrayList;
-import java.util.List;
 
 
 /**
@@ -572,7 +564,7 @@ public class ShapeAndBevelFragment extends Fragment implements android.widget.Ra
 //                }
             if(getOrder.getFrm_model()!=null && !getOrder.getFrm_model().equals("")){
                 Id=getOrder.getFrm_model();
-                String selectR=getOrder.getFrameNamedef();
+                String selectR= GetOrder.getFrameNamedef();
                 System.out.println("data"+selectR);
 
                 System.out.println("slected frame_Model"+Id);
@@ -676,7 +668,7 @@ public class ShapeAndBevelFragment extends Fragment implements android.widget.Ra
 
                 /*fragment call */
                 OrderReviewFragment fragment= new OrderReviewFragment();
-                android.support.v4.app.FragmentTransaction transaction = getFragmentManager().beginTransaction();
+                FragmentTransaction transaction = getFragmentManager().beginTransaction();
                 transaction.add(R.id.fragmentContainer, fragment);
                 transaction.addToBackStack(null);
                 transaction.commit();
