@@ -227,7 +227,7 @@ public class EmployeeManagementFragment extends DialogFragment {
 
 
                         empName=id1.getText().toString().trim();
-                        System.out.println("");
+                        System.out.println();
                         if (!empName.isEmpty()){
                             addEmp.setBackground(getResources().getDrawable(R.drawable.buttonshape));
                             addEmp.setTextColor(getResources().getColor(R.color.button_text));

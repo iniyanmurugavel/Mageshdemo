@@ -10,9 +10,8 @@ public class WrappedIOException {
 
     public static IOException wrap(final String message, final Throwable e) {
         final IOException wrappedException = new IOException(message + " [" +
-                e.getMessage() + "]");
+                e.getMessage() + "]", e);
         wrappedException.setStackTrace(e.getStackTrace());
-        wrappedException.initCause(e);
         return wrappedException;
     }
 }

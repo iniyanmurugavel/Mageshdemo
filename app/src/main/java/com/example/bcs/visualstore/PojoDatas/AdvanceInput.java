@@ -64,7 +64,7 @@ public class AdvanceInput implements Serializable {
     }
 
     public  void setRightCheck(String rightCheck) {
-        this.rightCheck = rightCheck;
+        AdvanceInput.rightCheck = rightCheck;
     }
 
     public  String getLeftCheck() {
@@ -72,11 +72,11 @@ public class AdvanceInput implements Serializable {
     }
 
     public  void setLeftCheck(String leftCheck) {
-        this.leftCheck = leftCheck;
+        AdvanceInput.leftCheck = leftCheck;
     }
 
     public void setPantoAngle(String pantoAngle) {
-        this.pantoAngle = pantoAngle;
+        AdvanceInput.pantoAngle = pantoAngle;
     }
 
     public String getBowAngle() {
@@ -84,7 +84,7 @@ public class AdvanceInput implements Serializable {
     }
 
     public void setBowAngle(String bowAngle) {
-        this.bowAngle = bowAngle;
+        AdvanceInput.bowAngle = bowAngle;
     }
 
     public String getRightPdz() {
@@ -92,7 +92,7 @@ public class AdvanceInput implements Serializable {
     }
 
     public void setRightPdz(String rightPdz) {
-        this.rightPdz = rightPdz;
+        AdvanceInput.rightPdz = rightPdz;
     }
 
     public String getLeftPdz() {
@@ -100,7 +100,7 @@ public class AdvanceInput implements Serializable {
     }
 
     public void setLeftPdz(String leftPdz) {
-        this.leftPdz = leftPdz;
+        AdvanceInput.leftPdz = leftPdz;
     }
 
     public String getRightYfh() {
@@ -108,7 +108,7 @@ public class AdvanceInput implements Serializable {
     }
 
     public void setRightYfh(String rightYfh) {
-        this.rightYfh = rightYfh;
+        AdvanceInput.rightYfh = rightYfh;
     }
 
     public String getLeftYfh() {
@@ -116,7 +116,7 @@ public class AdvanceInput implements Serializable {
     }
 
     public void setLeftYfh(String leftYfh) {
-        this.leftYfh = leftYfh;
+        AdvanceInput.leftYfh = leftYfh;
     }
 
     public String getRightBvd() {
@@ -124,7 +124,7 @@ public class AdvanceInput implements Serializable {
     }
 
     public void setRightBvd(String rightBvd) {
-        this.rightBvd = rightBvd;
+        AdvanceInput.rightBvd = rightBvd;
     }
 
     public String getLeftBvd() {
@@ -132,7 +132,7 @@ public class AdvanceInput implements Serializable {
     }
 
     public void setLeftBvd(String leftBvd) {
-        this.leftBvd = leftBvd;
+        AdvanceInput.leftBvd = leftBvd;
     }
 
     public String getRightFrmHigt() {
@@ -140,7 +140,7 @@ public class AdvanceInput implements Serializable {
     }
 
     public void setRightFrmHigt(String rightFrmHigt) {
-        this.rightFrmHigt = rightFrmHigt;
+        AdvanceInput.rightFrmHigt = rightFrmHigt;
     }
 
     public String getLeftFrmHigt() {
@@ -148,7 +148,7 @@ public class AdvanceInput implements Serializable {
     }
 
     public void setLeftFrmHigt(String leftFrmHigt) {
-        this.leftFrmHigt = leftFrmHigt;
+        AdvanceInput.leftFrmHigt = leftFrmHigt;
     }
 
     public String getRightFrmLegt() {
@@ -156,7 +156,7 @@ public class AdvanceInput implements Serializable {
     }
 
     public void setRightFrmLegt(String rightFrmLegt) {
-        this.rightFrmLegt = rightFrmLegt;
+        AdvanceInput.rightFrmLegt = rightFrmLegt;
     }
 
     public String getLeftFrmLegt() {
@@ -164,7 +164,7 @@ public class AdvanceInput implements Serializable {
     }
 
     public void setLeftFrmLegt(String leftFrmLegt) {
-        this.leftFrmLegt = leftFrmLegt;
+        AdvanceInput.leftFrmLegt = leftFrmLegt;
     }
 
     public String getRightDbl() {
@@ -172,7 +172,7 @@ public class AdvanceInput implements Serializable {
     }
 
     public void setRightDbl(String rightDbl) {
-        this.rightDbl = rightDbl;
+        AdvanceInput.rightDbl = rightDbl;
     }
 
     public String getLeftDbl() {
@@ -182,7 +182,7 @@ public class AdvanceInput implements Serializable {
 
 
     public void setLeftDbl(String leftDbl) {
-        this.leftDbl = leftDbl;
+        AdvanceInput.leftDbl = leftDbl;
     }
 
     public String serialize(){

@@ -133,7 +133,7 @@ public class AdvanceOptionFragment extends Fragment {
         String serializedDataFromLensOne=preferencesReaderOne.getString(PREFS_KEY,null);
         lensInput=LensInput.create(serializedDataFromLensOne);
 
-        System.out.println("indiv"+lensInput.getIndividual());
+        System.out.println("indiv"+ LensInput.getIndividual());
 
 
 

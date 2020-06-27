@@ -564,7 +564,7 @@ public class ShapeAndBevelFragment extends Fragment implements android.widget.Ra
 //                }
             if(getOrder.getFrm_model()!=null && !getOrder.getFrm_model().equals("")){
                 Id=getOrder.getFrm_model();
-                String selectR=getOrder.getFrameNamedef();
+                String selectR= GetOrder.getFrameNamedef();
                 System.out.println("data"+selectR);
 
                 System.out.println("slected frame_Model"+Id);

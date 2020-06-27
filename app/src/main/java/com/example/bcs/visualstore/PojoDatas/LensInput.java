@@ -91,7 +91,7 @@ public class LensInput implements Serializable {
     }
 
     public  void setHard(String hard) {
-        this.hard = hard;
+        LensInput.hard = hard;
     }
 
     @SerializedName("hard")
@@ -110,7 +110,7 @@ public class LensInput implements Serializable {
         LensInput.coatingType = coatingType;
     }
     public void setCotingCode(String cotingCode) {
-        this.cotingCode = cotingCode;
+        LensInput.cotingCode = cotingCode;
     }
 
 
@@ -201,79 +201,79 @@ public class LensInput implements Serializable {
     }
 
     public void setConFstNme(String conFstNme) {
-        this.conFstNme = conFstNme;
+        LensInput.conFstNme = conFstNme;
     }
 
     public void setConLstNme(String conLstNme) {
-        this.conLstNme = conLstNme;
+        LensInput.conLstNme = conLstNme;
     }
 
     public void setConsignee(String consignee) {
-        this.consignee = consignee;
+        LensInput.consignee = consignee;
     }
 
     public void setEmployee(String employee) {
-        this.employee = employee;
+        LensInput.employee = employee;
     }
 
     public void setRightSphere(String rightSphere) {
-        this.rightSphere = rightSphere;
+        LensInput.rightSphere = rightSphere;
     }
 
     public void setRightCylind(String rightCylind) {
-        this.rightCylind = rightCylind;
+        LensInput.rightCylind = rightCylind;
     }
 
     public void setRightAxis(String rightAxis) {
-        this.rightAxis = rightAxis;
+        LensInput.rightAxis = rightAxis;
     }
 
     public void setRightAddition(String rightAddition) {
-        this.rightAddition = rightAddition;
+        LensInput.rightAddition = rightAddition;
     }
 
     public void setLeftSphere(String leftSphere) {
-        this.leftSphere = leftSphere;
+        LensInput.leftSphere = leftSphere;
     }
 
     public void setLeftCylind(String leftCylind) {
-        this.leftCylind = leftCylind;
+        LensInput.leftCylind = leftCylind;
     }
 
     public void setLeftAxis(String leftAxis) {
-        this.leftAxis = leftAxis;
+        LensInput.leftAxis = leftAxis;
     }
 
     public void setLeftAddition(String leftAddition) {
-        this.leftAddition = leftAddition;
+        LensInput.leftAddition = leftAddition;
     }
 
     public void setPortofolio(String portofolio) {
-        this.portofolio = portofolio;
+        LensInput.portofolio = portofolio;
     }
 
     public void setLensTypeName(String lensTypeName) {
-        this.lensTypeName = lensTypeName;
+        LensInput.lensTypeName = lensTypeName;
     }
 
     public void setLensTypeCode(String lensTypeCode) {
-        this.lensTypeCode = lensTypeCode;
+        LensInput.lensTypeCode = lensTypeCode;
     }
 
     public void setRightDiameter(String rightDiameter) {
-        this.rightDiameter = rightDiameter;
+        LensInput.rightDiameter = rightDiameter;
     }
 
     public void setLeftDiamter(String leftDiamter) {
-        this.leftDiamter = leftDiamter;
+        LensInput.leftDiamter = leftDiamter;
     }
 
     public void setCoating(String coating) {
-        this.coating = coating;
+        LensInput.coating = coating;
     }
 
     public void setTint(String tint) {
-        this.tint = tint;
+        LensInput.tint = tint;
     }
 
     public String getSides() {
@@ -281,7 +281,7 @@ public class LensInput implements Serializable {
     }
 
     public void setSides(String sides) {
-        this.sides = sides;
+        LensInput.sides = sides;
     }
 
     public  void setTintName(String tintName) {
@@ -307,30 +307,30 @@ public class LensInput implements Serializable {
 
     public LensInput(String orderRef, String conFstNme, String conLstNme, String consignee, String employee, String rightSphere, String rightCylind, String rightAxis, String rightAddition, String leftSphere, String leftCylind,String hard,String leftAxis, String leftAddition, String portofolio, String lensTypeName, String lensTypeCode, String rightDiameter, String leftDiamter, String coating,String cotingCode, String tint,String tintName,String switch1,String virtualSide) {
         OrderRef = orderRef;
-        this.conFstNme = conFstNme;
-        this.conLstNme = conLstNme;
-        this.consignee = consignee;
-        this.employee = employee;
-        this.rightSphere = rightSphere;
-        this.rightCylind = rightCylind;
-        this.rightAxis = rightAxis;
-        this.rightAddition = rightAddition;
-        this.leftSphere = leftSphere;
-        this.leftCylind = leftCylind;
-        this.leftAxis = leftAxis;
-        this.leftAddition = leftAddition;
-        this.portofolio = portofolio;
-        this.lensTypeName = lensTypeName;
-        this.lensTypeCode = lensTypeCode;
-        this.rightDiameter = rightDiameter;
-        this.leftDiamter = leftDiamter;
-        this.coating = coating;
-        this.cotingCode=cotingCode;
-        this.tint = tint;
-        this.tintName=tintName;
-        this.hard=hard;
-        this.switch1=switch1;
-        this.virtualSide=virtualSide;
+        LensInput.conFstNme = conFstNme;
+        LensInput.conLstNme = conLstNme;
+        LensInput.consignee = consignee;
+        LensInput.employee = employee;
+        LensInput.rightSphere = rightSphere;
+        LensInput.rightCylind = rightCylind;
+        LensInput.rightAxis = rightAxis;
+        LensInput.rightAddition = rightAddition;
+        LensInput.leftSphere = leftSphere;
+        LensInput.leftCylind = leftCylind;
+        LensInput.leftAxis = leftAxis;
+        LensInput.leftAddition = leftAddition;
+        LensInput.portofolio = portofolio;
+        LensInput.lensTypeName = lensTypeName;
+        LensInput.lensTypeCode = lensTypeCode;
+        LensInput.rightDiameter = rightDiameter;
+        LensInput.leftDiamter = leftDiamter;
+        LensInput.coating = coating;
+        LensInput.cotingCode =cotingCode;
+        LensInput.tint = tint;
+        LensInput.tintName =tintName;
+        LensInput.hard =hard;
+        LensInput.switch1 =switch1;
+        LensInput.virtualSide =virtualSide;
 
 
     }

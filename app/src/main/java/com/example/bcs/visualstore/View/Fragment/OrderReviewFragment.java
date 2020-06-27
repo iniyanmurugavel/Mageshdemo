@@ -663,7 +663,7 @@ public class OrderReviewFragment extends Fragment {
 
                 DataOutputStream wr = new DataOutputStream(conn.getOutputStream());
                 wr.writeBytes(postDataBody);
-                System.out.println("Post data body : " + postDataBody.toString());
+                System.out.println("Post data body : " + postDataBody);
                 wr.flush();
                 wr.close();
                 os.close();
@@ -674,7 +674,7 @@ public class OrderReviewFragment extends Fragment {
                 // Log.e("rescode=", "" + responseCode);ok
 
 
-                System.out.println("Post data body : " + postDataBody.toString());
+                System.out.println("Post data body : " + postDataBody);
 
 
 

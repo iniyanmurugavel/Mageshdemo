@@ -53,7 +53,7 @@ public class LoginActivity extends AppCompatActivity {
             getWindow().setNavigationBarColor(ContextCompat.getColor(this, R.color.darkgrey)); // Navigation bar the soft bottom of some phones like nexus and some Samsung note series
             getWindow().setStatusBarColor(ContextCompat.getColor(this,R.color.darkgrey)); //status bar or the time bar at the top
         }
-        SharedPreferences pref=getApplicationContext().getSharedPreferences("MyPref", 0); ;
+        SharedPreferences pref=getApplicationContext().getSharedPreferences("MyPref", 0);
         String emailPhone= pref.getString("Login",null);
 
         if (!TextUtils.isEmpty(emailPhone)){

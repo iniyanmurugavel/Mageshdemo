@@ -1876,7 +1876,7 @@ public class   LensOrderingFragment extends Fragment {
         lensInput.setHard(hard);
         lensInput.setSwitch1(switch_value);
         lensInput.setVirtualSide(virtualSide);
-        lensInput.setIndividual(individual);
+        LensInput.setIndividual(individual);
 
         System.out.println("rDiameter is "+rdia);
         System.out.println("lDiameter is "+ldia);
